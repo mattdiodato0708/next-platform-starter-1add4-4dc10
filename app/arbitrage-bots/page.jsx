@@ -225,7 +225,7 @@ const statisticalBots = [
         stars: '17.7k+',
         language: 'Python',
         description:
-            'Also listed above, Hummingbot includes AMM arbitrage and cross-exchange strategies that apply statistical methods. Its backtesting engine allows strategy validation before live deployment.',
+            'Hummingbot includes AMM arbitrage and cross-exchange strategies that apply statistical methods. Its backtesting engine allows strategy validation before live deployment, making it a strong choice for quantitative approaches.',
         highlights: ['Statistical backtesting', 'AMM arbitrage', 'Strategy validation']
     },
     {
