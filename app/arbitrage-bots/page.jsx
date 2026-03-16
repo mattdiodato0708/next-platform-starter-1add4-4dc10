@@ -8,8 +8,10 @@ export const metadata = {
 const intro = `
 A curated guide to the top open-source arbitrage bots, libraries, and AI multi-agent frameworks on GitHub — 
 covering crypto exchanges, DeFi/DEX, sports betting, statistical arbitrage, and autonomous AI agent systems 
-(including OpenClaw and Claude-based multi-agent platforms). Sorted by GitHub stars and community adoption to 
-help you find the best projects to research.
+(including OpenClaw and Claude-based multi-agent platforms). Also includes **mobile-friendly & cloud-deployable 
+bots** you can control from your Android phone or run on Google Cloud, plus **cost-efficient sports arbitrage 
+tools** with Android apps. Sorted by GitHub stars and community adoption to help you find the best projects 
+to research.
 `;
 
 const cryptoExchangeIntro = `
@@ -54,6 +56,23 @@ const openClawIntro = `
 OpenClaw is an emerging open-source ecosystem for building AI agents powered by Claude and other LLMs. 
 These projects provide agent orchestration, memory systems, and multi-agent coordination — useful for 
 building sophisticated trading systems or any autonomous workflow.
+`;
+
+const mobileCloudIntro = `
+### 📱 Mobile & Cloud-Ready Autonomous Bots
+
+These are the top open-source bots you can deploy on **Google Cloud** (or any VPS) and control from your 
+**Android phone** — via Telegram, web UI, or SSH. Give them a task and let them run autonomously. All are 
+free and open-source with active communities. Perfect for micro trading with small amounts.
+`;
+
+const sportsToolsIntro = `
+### 🏈 Cost-Efficient Sports Arbitrage Tools (Android-Friendly)
+
+While fully open-source sports arb bots with autonomous execution are still emerging, these are the most 
+**cost-efficient, publicly available tools** with Android apps or mobile-responsive interfaces. They scan 
+odds across sportsbooks and get you as close to autonomous execution as regulations allow — most offer 
+1-click bet slip prefill, real-time alerts, and semi-automated workflows.
 `;
 
 const disclaimer = `
@@ -376,6 +395,172 @@ const openClawBots = [
     }
 ];
 
+const mobileCloudBots = [
+    {
+        name: 'Freqtrade',
+        fullName: 'freqtrade/freqtrade',
+        url: 'https://github.com/freqtrade/freqtrade',
+        stars: '47.7k+',
+        language: 'Python',
+        description:
+            'The most popular free, open-source crypto trading bot. Deploy on Google Cloud or any VPS, then control entirely from your Android phone via the built-in Telegram bot or the FreqUI web dashboard. Supports backtesting, strategy optimization, dry-run (paper trading), and live autonomous execution. Give it a strategy and let it trade 24/7.',
+        highlights: [
+            'Telegram bot control from phone',
+            'FreqUI web dashboard',
+            'Google Cloud / VPS deploy',
+            'Autonomous 24/7 execution',
+            '100% free & open-source'
+        ]
+    },
+    {
+        name: 'OctoBot',
+        fullName: 'Drakkar-Software/OctoBot',
+        url: 'https://github.com/Drakkar-Software/OctoBot',
+        stars: '5.4k+',
+        language: 'Python',
+        description:
+            'Free, beginner-friendly crypto trading bot with a clean web interface you can access from your Android browser. Supports grid trading, DCA, TradingView signals, and AI-powered strategies. Deploy on Google Cloud with Docker, then manage from your phone via Telegram notifications or the mobile-responsive web UI. Also has a prediction market arbitrage module.',
+        highlights: [
+            'Mobile-responsive web UI',
+            'Telegram notifications',
+            'Docker deploy (Google Cloud ready)',
+            'Prediction market arb module',
+            'Beginner-friendly'
+        ]
+    },
+    {
+        name: 'Superalgos',
+        fullName: 'Superalgos/Superalgos',
+        url: 'https://github.com/Superalgos/Superalgos',
+        stars: '5.3k+',
+        language: 'JavaScript',
+        description:
+            'Visual, no-code crypto trading platform you can deploy on Google Cloud and access from any Android browser. Design strategies with a drag-and-drop visual editor, backtest, paper trade, then deploy live — all from a web dashboard. Has an official Superalgos Mobile app (Dart/Flutter) for monitoring. Great for non-programmers.',
+        highlights: [
+            'Visual drag-and-drop strategies',
+            'Official mobile app (Flutter)',
+            'Cloud deploy + web dashboard',
+            'No coding required',
+            'Multi-server deployment'
+        ]
+    },
+    {
+        name: 'Jesse',
+        fullName: 'jesse-ai/jesse',
+        url: 'https://github.com/jesse-ai/jesse',
+        stars: '7.5k+',
+        language: 'Python',
+        description:
+            'Advanced crypto trading framework focused on simplicity and power. Write strategies in pure Python, backtest with high accuracy, then deploy on Google Cloud for live trading. Access via SSH or web UI from your Android device. Supports Kubernetes (Helm chart available) for serious cloud deployments.',
+        highlights: [
+            'Simple Python strategies',
+            'High-accuracy backtesting',
+            'Kubernetes / Helm chart',
+            'Cloud-native design',
+            'Active community'
+        ]
+    },
+    {
+        name: 'Hummingbot (Telegram Control)',
+        fullName: 'hummingbot/hummingbot',
+        url: 'https://github.com/hummingbot/hummingbot',
+        stars: '17.7k+',
+        language: 'Python',
+        description:
+            'Already listed above for its arbitrage capabilities — Hummingbot also shines for mobile control. Deploy on Google Cloud with Docker, then manage your bots from Android via the Condor Telegram integration. Start, stop, and monitor strategies from your phone. Built-in cross-exchange arbitrage executes autonomously once configured.',
+        highlights: [
+            'Condor Telegram bot',
+            'Docker + Google Cloud',
+            'Autonomous arbitrage execution',
+            'Mobile monitoring',
+            'Cross-exchange strategies'
+        ]
+    }
+];
+
+const sportsArbTools = [
+    {
+        name: 'OddsJam',
+        fullName: 'OddsJam (Android App)',
+        url: 'https://play.google.com/store/apps/details?id=com.oddsjam.app',
+        stars: 'N/A',
+        language: 'Android App + Web',
+        description:
+            'The leading sports arbitrage scanner with a native Android app. Offers 1-click arbitrage that pre-loads your bet slip on connected sportsbooks for near-autonomous execution. Scans 150+ sportsbooks with real-time alerts pushed to your phone. 7-day free trial available.',
+        highlights: [
+            'Native Android app',
+            '1-click bet slip prefill',
+            '150+ sportsbooks',
+            'Real-time push alerts',
+            'Free trial: 7 days'
+        ]
+    },
+    {
+        name: 'RebelBetting',
+        fullName: 'RebelBetting (Web + Mobile)',
+        url: 'https://www.rebelbetting.com',
+        stars: 'N/A',
+        language: 'Web App (Mobile-Responsive)',
+        description:
+            'Professional sports arbitrage platform with API-based auto-betting support through select European bookmakers. Mobile-responsive web app works on Android browsers. Offers both sure-bet (arbitrage) and value-bet scanning. 14-day free trial, then ~$69–$180/month depending on tier.',
+        highlights: [
+            'Auto-betting via API (select books)',
+            'Mobile-responsive web',
+            '14-day free trial',
+            'Sure-bet + value-bet modes',
+            'From ~$69/month'
+        ]
+    },
+    {
+        name: 'BetBurger',
+        fullName: 'BetBurger (Web + Mobile)',
+        url: 'https://betburger.com',
+        stars: 'N/A',
+        language: 'Web App (Mobile-Responsive)',
+        description:
+            'Scans 700+ bookmakers worldwide for arbitrage opportunities in real-time. Mobile-friendly web interface with instant notifications on your Android. Covers both pre-match and live betting. One of the most affordable entry points at ~€29/month for pre-match arbing.',
+        highlights: [
+            '700+ bookmakers',
+            'Pre-match + live scanning',
+            'Mobile-friendly alerts',
+            'From ~€29/month',
+            'Global coverage'
+        ]
+    },
+    {
+        name: 'OddsPulse',
+        fullName: 'OddsPulse (Web + Mobile)',
+        url: 'https://oddspulse.com',
+        stars: 'N/A',
+        language: 'Web App (Mobile-Responsive)',
+        description:
+            'Specializes in live arbitrage with the fastest odds auto-refresh in the industry. Mobile-responsive interface works well on Android for rapid in-play arbing. Cost-effective alternative to bigger platforms at ~$50/month.',
+        highlights: [
+            'Fastest live odds refresh',
+            'Mobile-responsive',
+            'Live arb specialist',
+            '~$50/month',
+            'Quick execution tools'
+        ]
+    },
+    {
+        name: 'Live Sports Arb Bet Finder (Open-Source)',
+        fullName: 'personal-coding/Live-Sports-Arbitrage-Bet-Finder',
+        url: 'https://github.com/personal-coding/Live-Sports-Arbitrage-Bet-Finder',
+        stars: '273+',
+        language: 'Python',
+        description:
+            'The top open-source sports arb bot (also listed above). Run it on Google Cloud for free-tier usage, and set up Telegram/email alerts to your phone. Scans FanDuel, DraftKings, and Caesars. Requires some Python setup but is completely free — great for DIY autonomous sports arb on a budget.',
+        highlights: [
+            '100% free & open-source',
+            'Google Cloud free tier compatible',
+            'Telegram/email alerts',
+            'FanDuel + DraftKings + Caesars',
+            'DIY autonomous setup'
+        ]
+    }
+];
+
 function BotCard({ bot }) {
     return (
         <Card className="h-full">
@@ -430,6 +615,16 @@ export default function Page() {
             <section>
                 <h1 className="mb-4">Arbitrage Bots & AI Agent Frameworks</h1>
                 <Markdown content={intro} className="mb-6" />
+            </section>
+
+            <section className="flex flex-col gap-6">
+                <Markdown content={mobileCloudIntro} />
+                <BotGrid bots={mobileCloudBots} />
+            </section>
+
+            <section className="flex flex-col gap-6">
+                <Markdown content={sportsToolsIntro} />
+                <BotGrid bots={sportsArbTools} />
             </section>
 
             <section className="flex flex-col gap-6">
